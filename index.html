@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        background: #000046; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #1cb5e0,
+          #000046
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #1cb5e0,
+          #000046
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: 200% auto;
+        animation-name: changeBg;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+      }
+
+    @keyframes changeBg {
+        from{
+            background-position-x: 0%;
+        }
+        to{
+            background-position-x: 100%;
+        }
+    }
+      h1{
+        color: white;
+        font-family: sans-serif    ;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iman Eliyev</h1>
+  </body>
+</html>
